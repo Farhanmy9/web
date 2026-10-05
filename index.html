@@ -1,0 +1,284 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farhan M Yalavigi | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            color: #111827;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: #111827;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: white;
+            padding: 25px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .hobbies {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .hobby {
+            background: white;
+            padding: 25px;
+            width: 200px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            font-size: 18px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #111827;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #030712;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+
+            .hero h2 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>Farhan M Yalavigi</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div>
+            <h2>Hello, I'm Farhan</h2>
+
+            <p>
+                Programming Student | C & Python Learner | Web Development Beginner
+            </p>
+
+            <a href="#about" class="btn">Explore My Portfolio</a>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                Hello! My name is <strong>Farhan M Yalavigi</strong>.
+                I am interested in programming and technology.
+                I have knowledge of C programming and Python,
+                and I am currently learning HTML and web development.
+                I enjoy learning new technologies and improving
+                my programming skills.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                C Programming
+            </div>
+
+            <div class="skill">
+                Python
+            </div>
+
+            <div class="skill">
+                HTML - Learning
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+
+        <div class="hobbies">
+
+            <div class="hobby">
+                ⚽<br><br>
+                Playing Football
+            </div>
+
+            <div class="hobby">
+                🎬<br><br>
+                Watching Movies
+            </div>
+
+            <div class="hobby">
+                💻<br><br>
+                Learning Programming
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+            Interested in connecting with me?
+        </p>
+
+        <br>
+
+        <p>
+            Name: Farhan M Yalavigi
+        </p>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Farhan M Yalavigi. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
